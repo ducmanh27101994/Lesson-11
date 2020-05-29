@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+
+<script>
+
+    let number = +prompt('Nhập số lượng số nguyên tố cần in ra:',);
+    let n = 2;
+    let count;
+    let i;
+
+    for (count=0; count<number;) {
+
+        for (i = 0; i < n; i++) {
+            if (n % i === 0) {
+                n=n+1;
+            }
+            }
+        alert(n)
+        count = count + 1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
