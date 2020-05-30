@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2: Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập. Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ. Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ.</title>
+</head>
+<body>
+
+<script>
+    let a = +prompt("Nhập nhiệt độ hiện tại: ");
+    let i;
+
+    if (a>100) {
+        for (i=1;i<=(a-100);i++) {
+            alert("Giảm nhiệt độ xuống " +(a-i));
+        }
+    } else if (a<20) {
+        for (i = 1; i <= (20-a); i++) {
+            alert("Tăng nhiệt độ lên " +(a+i));
+        }
+    } else {
+        alert(a);
+    }
+
+
+
+</script>
+
+
+
+</body>
+</html>

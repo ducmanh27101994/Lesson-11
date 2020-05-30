@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3: Hiển thị ra 20 số trong dãy fibonacci đầu tiên.</title>
+</head>
+<body>
+
+<script>
+    let number = +prompt('Nhập số lượng dãy số fibonacci cần in ra:',);
+
+    let i;
+    let area; //Số fibonnaci
+    let a = Math.sqrt(5)
+
+
+            for (i = 0; i < number; i++) {
+               area = (1/a)*((((1+a)/2)**i)-(((1-a)/2)**i));
+                document.write(" " +area.toFixed(0));
+            }
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
