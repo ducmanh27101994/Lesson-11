@@ -25,26 +25,33 @@
         document.write('</br>');
     }
 
-    for(i=0; i<5; i++){
-        for(j=i ; j<5; j++){
-            document.write(".");
+    let sout1;
+    sout1 = "<table>";
+    for (let k = 0; k < 5; k++) {
+        sout1 = sout1 + "<tr>"
+        for (let l = k; l < 5; l++) {
+            sout1 = sout1 + "<td>" + " " + "</td>"
         }
-        for (j=i;j>=0;j--){
-        document.write("*");
+        for (let l = k; l >=0 ; l--) {
+            sout1 = sout1 + "<td>" + "*" + "</td>"
+        }
+        sout1 = sout1 + "</tr>"
     }
-        document.write('</br>');
-    }
+    document.write(sout1);
 
-    for(i=0; i<5; i++){
-        for(j=i ; j>=0; j--){
-            document.write(".");
+    let sout;
+    sout = "<table>";
+    for (let k = 0; k < 5; k++) {
+        sout = sout + "<tr>"
+        for (let l = k; l >=0; l--) {
+            sout = sout + "<td>" + " " + "</td>"
         }
-        for (j=i;j<5;j++){
-            document.write("*");
+        for (let l = k; l < 5 ; l++) {
+            sout = sout + "<td>" + "*" + "</td>"
         }
-        document.write('</br>');
+        sout = sout + "</tr>"
     }
-
+    document.write(sout);
 
 
 
