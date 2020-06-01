@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ Hình Trái Tim</title>
+</head>
+<body>
+
+<script>
+
+    function fibonnaci(number) {
+        let a = 0;
+        let b = 1;
+        let temp;
+        document.write(a + "</br>");
+        document.write(b + "</br>");
+        for (let i = 0; i < number; i++) {
+            temp = a + b;
+            document.write(temp + "</br>");
+            a = b;
+            b = temp;
+        }
+    }
+    fibonnaci(20);
+
+
+</script>
+
+
+
+</body>
+</html>

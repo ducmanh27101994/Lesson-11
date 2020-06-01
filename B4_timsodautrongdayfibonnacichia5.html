@@ -7,19 +7,36 @@
 <body>
 
 <script>
-    let area; //số trong dãy fibonacci
-    let i;
-    let a = Math.sqrt(5);
+    // let area; //số trong dãy fibonacci
+    // let i;
+    // let a = Math.sqrt(5);
+    //
+    // for (i = 1; i > 0 ;) {
+    //     area = (1 / a) * ((((1 + a) / 2) ** i) - (((1 - a) / 2) ** i));
+    //     if (area % 5 === 0) {
+    //         alert("Số đầu tiên trong dãy fibonnacci chia hết cho 5 là:" +area);
+    //         break;
+    //     }
+    //     i++
+    // }
 
-    for (i = 1; i > 0 ;) {
-        area = (1 / a) * ((((1 + a) / 2) ** i) - (((1 - a) / 2) ** i));
-        if (area % 5 === 0) {
-            alert("Số đầu tiên trong dãy fibonnacci chia hết cho 5 là:" +area);
-            break;
+    function fibonnaci(number) {
+        let a = 0;
+        let b = 1;
+        let temp;
+        // document.write(a + "</br>");
+        // document.write(b + "</br>");
+        for (let j = 0; j < number; j++) {
+            temp = a + b;
+            if (temp%5===0){
+                document.write(temp);
+                break;
+            }
+            a = b;
+            b = temp;
         }
-        i++
     }
-
+    fibonnaci(10);
 
 </script>
 
