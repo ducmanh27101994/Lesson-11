@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8: Game đoán số</title>
+</head>
+<body>
+
+<button type="button" onclick="clickGame()">Chơi</button>
+
+
+<script>
+    let max;
+
+    function clickGame() {
+        let a = +prompt("Cận dưới số trong khoảng bạn đoán:");
+        let b = +prompt("Cận trên số trong khoảng bạn đoán:");
+
+
+        let area = +Math.floor(Math.random() * b) + a;
+
+        for (i = 1; i > 0; i++) {
+            let result = +prompt("Số mà người dùng đoán là:");
+            if (result === area) {
+                alert("Chúc mừng bạn đã chiến thắng");
+                break;
+            } else if (result > area) {
+                alert("Số bạn chọn lớn hơn - Xin phép chọn lại")
+            } else {
+                alert("Số bạn chọn nhỏ hơn - Xin phép chọn lại")
+            }
+
+        }
+
+
+    }
+
+</script>
+
+
+</body>
+</html>

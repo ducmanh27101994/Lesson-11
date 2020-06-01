@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4: Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.</title>
+</head>
+<body>
+
+<script>
+    let area; //số trong dãy fibonacci
+    let i;
+    let a = Math.sqrt(5);
+
+    for (i = 1; i > 0 ;) {
+        area = (1 / a) * ((((1 + a) / 2) ** i) - (((1 - a) / 2) ** i));
+        if (area % 5 === 0) {
+            alert("Số đầu tiên trong dãy fibonnacci chia hết cho 5 là:" +area);
+            break;
+        }
+        i++
+    }
+
+
+</script>
+
+
+</body>
+</html>
