@@ -5,23 +5,52 @@
     <title>In hình chữ nhật</title>
 </head>
 <body>
-<script>
-    function horizontal() {
-        for (let i = 0; i < 20; i++) {
-            document.write("*")
-        }
-    }
-    function horizontal1() {
-        for (let i = 0; i < 5; i++) {
-            for (let j = 0; j < 18; j++) {
-                document
-            }
-        }
-    }
 
-    horizontal();
+
+<script>
+
+    // let sout1;
+    // sout1 = "<table>"
+    // for (let i = 0; i < 12; i++) {
+    //     sout1 = sout1 + "<td>" + "*" + "</td>"
+    // }
+    // let sout2;
+    // sout2 = "<table>"
+    // for (let i = 0; i < 12; i++) {
+    //     sout2 = sout2 + "<td>" + "*" + "</td>"
+    // }
+    //
+    // let sout;
+    // sout = "<table>";
+    //
+    // for (let i = 0; i < 5; i++) {
+    //     sout = sout + "<tr>";
+    //     sout = sout + "<td>" + "*" + "</td>"
+    //     for (let j = 0; j < 30; j++) {
+    //         sout = sout + "<td>" + " " + "</td>"
+    //     }
+    //     sout = sout + "<td>" + "*" + "</td>"
+    //     sout = sout + "</tr>"
+    // }
+    //
+    //
+    // document.write(sout1);
+    // document.write(sout);
+    // document.write(sout2);
     
-    
+    function rectangle(width,height) {
+
+        for (let i = 0; i < width ; i++) {
+            for (let j = 0; j < height ; j++) {
+                if (i===0 || j===0 || i===(width-1) || j===(height-1)){
+                    document.write("*");
+                } else {
+                    document.write("&nbsp&nbsp")
+                }
+            }document.write("</br>")
+        }
+    }
+    rectangle(5,15);
 </script>
 
 
